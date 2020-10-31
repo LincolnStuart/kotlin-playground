@@ -8,4 +8,6 @@
     <string name="value_1">Value 1</string>
     <string name="value_2">Value 2</string>
     <string name="ok">ok</string>
+    <string name="recycler_view">RecyclerView</string>
+    <string name="test">test</string>
 </resources>

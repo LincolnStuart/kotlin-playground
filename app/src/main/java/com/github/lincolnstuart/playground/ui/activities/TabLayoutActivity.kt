@@ -23,9 +23,8 @@ class TabLayoutActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
 
     private fun initComponents() {
         viewModel = ViewModelProvider(this).get(TabViewModel::class.java)
-        viewModel.onTabObjectChanged.observe(this, {
-            val tab = tl_tab_layout_test.getTabAt(1)
-            tab?.select()
+        viewModel.onExampleChanged.observe(this, {
+            tl_tab_layout_test.getTabAt(1)?.select()
         })
         replaceContainer(Tab1Fragment())
         tl_tab_layout_test.addOnTabSelectedListener(this)

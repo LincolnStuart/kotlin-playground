@@ -18,5 +18,8 @@ class MainActivity : AppCompatActivity() {
         bt_main_tab_layout.setOnClickListener {
             startActivity(Intent(this, TabLayoutActivity::class.java))
         }
+        bt_main_recycler_view.setOnClickListener {
+            startActivity(Intent(this, RecyclerViewActivity::class.java))
+        }
     }
 }

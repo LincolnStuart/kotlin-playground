@@ -29,7 +29,7 @@ class Tab2Fragment : Fragment() {
     private fun initComponents() {
         activity?.let {
             viewModel = ViewModelProvider(it).get(TabViewModel::class.java)
-            viewModel.onTabObjectChanged.observe(it, { tabObject ->
+            viewModel.onExampleChanged.observe(it, { tabObject ->
                 tabObject?.let {to ->
                     tv_tab2_fragment_response?.text = to.toString()
                 }
